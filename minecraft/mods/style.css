@@ -8,7 +8,7 @@ body {
     display: grid;
     grid-template: 1fr 50px / 250px 1fr;
 }
-.block {
+.code, .advice, .warning {
     background-color: #eee;
     box-shadow: 4px 4px 0px 0px #ccc;
     border-left: 3px solid;
