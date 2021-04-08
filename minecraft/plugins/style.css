@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('text.css');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    tab-size: 4;
+    display: grid;
+    grid-template: 1fr 50px / 250px 1fr;
+}
+.block {
+    background-color: #eee;
+    box-shadow: 4px 4px 0px 0px #ccc;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-radius: 2px;
+    display: block;
+    margin: 20px 0;
+    padding: 4px 8px;
+}
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+#sidebar {
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+#sidebar nav {
+    padding: 4px;
+    height: 100%;
+    display: flex;
+    background-color: #333;
+    flex-direction: column;
+}
+#sidebar nav a {
+    border: 2px solid #000;
+    margin: 3px 0;
+    border-radius: 50%;
+    padding: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+#sidebar nav a:hover {
+    background-color: #ccc;
+}
+.sidebar-content {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.sidebar-content ul a:hover{
+    display: block;
+    background-color: #333;
+}
+#logo {
+    border: 3px solid #333;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 100px;
+}
+#logo img {
+    height: 100px;
+}
+#wrapper {
+    display: flex;
+}
+footer {
+    background-color: #333;
+    grid-column: 1 / -1;
+}
+/* code */
+.code {
+    overflow-x: auto;
+    display: block;
+    border-color: #5f9ea0;
+}
+.code .title {
+    display: block;
+    border-radius: inherit;
+    padding: 5px;
+    color: #ccc;
+}
+.code .title::before {
+    content: "";
+    margin-right: 4px;
+    padding: 0 2px;
+    background-color: #5f9ea0;
+    color: #79d5d6;
+}
+/* advice */
+.advice {
+    text-align: center;
+    border-color: #00b400;
+}
+.advice::before {
+    content: "Совет";
+    display: block;
+    background-color: #00b400c0;
+    border-radius: inherit;
+    max-width: 150px;
+    color: #eee;
+    margin: 0 auto 6px auto;
+}
+/* warning */
+.warning {
+    text-align: center; 
+    border-color: #a80000;
+}
+.warning::before {
+    content: "! Обрати внимание !";
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 6px auto;
+    background-color: #a80000c0;
+    border-radius: inherit;
+    color: #eee;
+}
+img {
+    max-width: 100%;
+}
