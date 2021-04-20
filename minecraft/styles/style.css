@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('text.css');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,7 +8,7 @@
 body {
     tab-size: 4;
     display: grid;
-    grid-template: 1fr 50px / 250px 1fr;
+    grid-template: 1fr 50px / 300px 1fr;
 }
 .code, .advice, .warning {
     background-color: #eee;
@@ -19,7 +21,8 @@ body {
     padding: 4px;
 }
 main {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 #sidebar {
     background-color: #ccc;
@@ -31,7 +34,7 @@ main {
     padding: 4px;
     height: 100%;
     display: flex;
-    background: linear-gradient(40deg, #1a2131 0%, #263048 100%);
+    background-color: #333;
     flex-direction: column;
 }
 #sidebar nav a {
@@ -52,11 +55,8 @@ main {
     display: block;
     width: 100%;
 }
-.sidebar-content li:hover {
-    background-color: #333;
-}
 #logo {
-    border: 3px solid #263048;
+    border: 3px solid #333;
     display: flex;
     height: 100px;
     justify-content: center;
@@ -69,7 +69,7 @@ main {
     height: 100px;
 }
 footer {
-    background-color: #1a2131;
+    background-color: #333;
     grid-column: 1 / -1;
 }
 /* code */
@@ -101,7 +101,7 @@ footer {
     display: block;
     background-color: #00b400c0;
     border-radius: inherit;
-    max-width: 25%;
+    max-width: 150px;
     color: #eee;
     margin: 0 auto 6px auto;
 }
@@ -113,9 +113,12 @@ footer {
 .warning::before {
     content: "! Обрати внимание !";
     display: block;
-    max-width: 25%;
+    max-width: 200px;
     margin: 0 auto 6px auto;
     background-color: #a80000c0;
     border-radius: inherit;
     color: #eee;
+}
+img {
+    max-width: 100%;
 }

@@ -1,0 +1,106 @@
+pre {
+    font-size: 16px;
+    background-color: #555;
+    display: block;
+    border: 3px solid #333;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+pre p {
+    text-align: center;
+    color: yellow;
+    background-color: #333;
+    margin: 0px;
+    padding: 2px;
+    display: flex;
+}
+pre p::before {
+    margin: auto 5px;
+    content: "";
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    display: block;
+}
+pre p::after {
+    margin: auto 5px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: block;
+    background-color: green;
+    border-radius: 50%;
+}
+pre code {
+    white-space: pre;
+    margin: 0;
+    color: mediumpurple;
+    padding: 6px 0;
+    display: block;
+    background-color: #555;
+    border-left: 2px solid aqua;
+    border-right: 2px solid aqua;
+    border-radius: 2px;
+}
+.advice {
+    border: 4px solid green;
+    position: relative;
+    padding: 20px 30px 10px 30px;
+    border-radius: 4px;
+    background-color: #87a08a;
+}
+.advice::before {
+    content: "Совет";
+    background-color: #0ea522;
+    color: white;
+    font-weight: bold;
+    border: 4px solid green;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 35px;
+    font-size: 16px;
+    padding: 2px 16px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 4px;
+}
+.warning {
+    position: relative;
+    border: 4px solid red;
+    padding: 10px 64px;
+    background-color: #5c3535;
+    border-radius: 4px;
+    color: #ccc;
+}
+.warning::before {
+    content: "!!!";
+    left: 2px;
+    top: 0;
+    font-weight: bold;
+    font-size: 32px;
+    color: red;
+    position: absolute;
+}
+.advice, pre, .warning {
+    margin: 25px 0;
+}
+.hierarchy, .hierarchy ul {
+    padding: 0 25px;
+}
+.hierarchy li {
+    display: block;
+    list-style: none;
+    padding-left: 24px;
+    background-repeat: no-repeat;
+}
+.hierarchy .folder {
+    background-image: url("../images/folder.svg");
+}
+.hierarchy .file {
+    background-image: url("../images/file.svg");
+}
+.hierarchy .class {
+    background-image: url("../images/class.svg");
+}

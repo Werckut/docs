@@ -1,0 +1,10 @@
+body {
+    margin: 100px;
+}
+main p {
+    text-align: center;
+}
+main ul {
+    text-align: center;
+    list-style: none;
+}

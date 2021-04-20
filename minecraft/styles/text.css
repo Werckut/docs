@@ -49,3 +49,24 @@ code {
     margin: 8px;
     border-bottom: 2px solid #333;
 }
+.sidebar-content ul li a {
+    text-align: left;
+    padding: 2px 0 2px 10px;
+    display: block;
+    text-decoration: none;
+}
+.sidebar-content ul li li a {
+    padding-left: 20px;
+}
+.sidebar-content ul li li a::before {
+    content: "▶ ";
+    color: #333;
+}
+.sidebar-content ul li a:hover{
+    background-color: #333;
+    color: #eee;
+}
+.sidebar-content ul li li a:hover::before {
+    content: "▶ ";
+    color: #eee;
+}
